@@ -1,0 +1,68 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select {
+    padding: 8px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+select:hover {
+    border-color: #007bff; /* Change border color on hover */
+}
+
+#chartContainer {
+    width: 80%;
+    max-width: 800px;
+    height: 400px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    display: block;
+    height: 100% !important; /* Ensures the canvas fills the container */
+    width: 100% !important; /* Ensures the canvas fills the container */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #chartContainer {
+        width: 100%;
+    }
+
+    select {
+        margin-bottom: 10px; /* Space between dropdowns on small screens */
+    }
+}
